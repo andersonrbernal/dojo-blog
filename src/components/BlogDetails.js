@@ -13,7 +13,7 @@ const BlogDetails = () => {
         <div className="blog-details">
             { isPending && <Loader />}
             { error && <Error message={ error } />}
-            { blog && <Blog title={ blog.title } author={ blog.author } body={ blog.body }/>}
+            { blog && <Blog id={ blog.id } title={ blog.title } author={ blog.author } body={ blog.body }/>}
         </div>
     );
 }
